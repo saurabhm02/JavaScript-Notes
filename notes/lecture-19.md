@@ -132,14 +132,14 @@ console.log(output); // 6
 
 ```js
 const users = [
-	{ firstName: "Alok", lastName: "Raj", age: 23 },
+	{ firstName: "Saurabh", lastName: "Mahapatra", age: 20 },
 	{ firstName: "Ashish", lastName: "Kumar", age: 29 },
 	{ firstName: "Ankit", lastName: "Roy", age: 29 },
 	{ firstName: "Pranav", lastName: "Mukherjee", age: 50 },
 ];
-// Get array of full name : ["Alok Raj", "Ashish Kumar", ...]
+// Get array of full name : ["Saurabh Mahapatra", "Ashish Kumar", ...]
 const fullNameArr = users.map((user) => user.firstName + " " + user.lastName);
-console.log(fullNameArr); // ["Alok Raj", "Ashish Kumar", ...]
+console.log(fullNameArr); // ["Saurabh Mahapatra", "Ashish Kumar", ...]
 
 ----------------------------------------------------------
 
@@ -163,7 +163,7 @@ console.log(report) // {29 : 2, 75 : 1, 50 : 1}
 ```js
 // First name of all people whose age is less than 30
 const users = [
-  { firstName: "Alok", lastName: "Raj", age: 23 },
+  { firstName: "Saurabh", lastName: "Mahapatra", age: 20 },
   { firstName: "Ashish", lastName: "Kumar", age: 29 },
   { firstName: "Ankit", lastName: "Roy", age: 29 },
   { firstName: "Pranav", lastName: "Mukherjee", age: 50 },
@@ -173,7 +173,7 @@ const users = [
 const output = users
   .filter((user) => user.age < 30)
   .map((user) => user.firstName);
-console.log(output); // ["Alok", "Ashish", "Ankit"]
+console.log(output); // ["Saurabh", "Ashish", "Ankit"]
 
 // Homework challenge: Implement the same logic using reduce
 const output = users.reduce((acc, curr) => {
@@ -182,7 +182,7 @@ const output = users.reduce((acc, curr) => {
   }
   return acc;
 }, []);
-console.log(output); // ["Alok", "Ashish", "Ankit"]
+console.log(output); // ["Saurabh", "Ashish", "Ankit"]
 ```
 
 <hr>
